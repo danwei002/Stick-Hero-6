@@ -16,7 +16,8 @@ Before (left) and after (right) image processing:
 
 <p float="left">
     <img src="https://github.com/danwei002/Stick-Hero-6/blob/main/image_processing/imgs/img8.jpg" width="480" height="270">
-    <img src="https://github.com/danwei002/Stick-Hero-6/blob/main/image_processing/old/test.png" align="middle" width="170" height="270"> 
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/danwei002/Stick-Hero-6/blob/main/image_processing/old/test.png" width="170" height="270"> 
 </p>
 
 The distance in platforms is returned by the image processor and then fed to the game logic calculation script. The game logic script returns the duration (in seconds) that the robot should press down on the screen for in order to successfully cross the gap. It does this by dividing the distance by an experimentally determined constant. Finally this time is sent to the motor control script, which uses the GPIOZero library. The motor control script holds the arm down for the duration calculated, and the result is the robot successfully crossing the gap. 
