@@ -10,7 +10,7 @@ A demo of the robot playing the game.
 
 <img src="https://github.com/danwei002/Stick-Hero-6/blob/main/robotLabelled.png">
 
-The robot consists of 4 main components, two hardware and two software. The hardware components are the motor and the camera. The software components are the image processing and the game logic calculation scripts. The camera, controlled by a Python script using the PiCamera library, takes a picture of the game running on the device below it at regular intervals. This raw image is sent to the image processing script as a Pillow Image object, which is converted into a NumPy array of RGB tuples. The image processor then crops the image down to only include the phone screen and finds the distance between the current and target platforms. 
+The robot consists of 4 main components, two hardware and two software. The hardware components are the motor and the camera. The software components are the image processing and the game logic calculation scripts. The camera, controlled by a Python script using the PiCamera library, takes a picture of the game running on the device below it at regular intervals. This raw image is sent to the image processing script as a Pillow Image object. The image processor then crops the image down to only include the phone screen. The cropped image is turned into a NumPy array of RGB tuples which the processor uses to find the distance between the current and target platforms. 
 
 Before (left) and after (right) image processing: 
 
